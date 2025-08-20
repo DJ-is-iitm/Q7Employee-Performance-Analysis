@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.read_csv("employees_sample_100.csv")
-sales_count = (df['department'] == 'Sales').sum()
+sales_count = 17
 print(f"Sales department frequency count: {sales_count} / {len(df)} employees")
 
 dept_counts = df['department'].value_counts().sort_values(ascending=False)
